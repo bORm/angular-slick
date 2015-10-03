@@ -88,7 +88,7 @@ angular.module('slick', []).directive('slick', [
               centerPadding: scope.centerPadding || '50px',
               cssEase: scope.cssEase || 'ease',
               customPaging: attrs.customPaging ? customPaging : void 0,
-              dots: scope.dots === 'true',
+              dots: attrs.dots || scope.dots === 'true',
               draggable: scope.draggable !== 'false',
               easing: scope.easing || 'linear',
               fade: scope.fade === 'true',
